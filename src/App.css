@@ -1,38 +1,102 @@
-.App {
+
+body {
+  background: #BEF05D;
+  width: 100vw;
+
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #BEF05D;
+  margin-bottom: 150px;
+  border-bottom: 2px solid yellowgreen;
+}
+
+.difficulty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  gap: 10px;
+}
+a {
+  cursor: pointer;
+  font-weight: 700;
+  border: 2px solid black;
+  border-radius: 25%;
+  padding: 5px;
+}
+a:hover {
+  background: black;
+  color: #BEF05D;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 768px;
+  margin: 0 auto;
+  cursor: pointer;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.targetScoreInput {
+  width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
+  .app {
+    padding: 4rem 2rem;
+  }
+  .header {
+    margin-bottom: 340px;
+  }
+
+  .grid {
+
+    width: 100vw;
+    height: 100vh;
+  }
+  img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .header {
+    font-size: 1rem;
+    width: 100vw;
+  }
+
+  .targetScoreInput {
+    width: 20px;
+    height: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/*@media screen and (max-width: 400px) {*/
+/*  .app {*/
+/*    padding: 4rem 1rem;*/
+/*  }*/
 
-.App-link {
-  color: #61dafb;
-}
+/*  h1 {*/
+/*    font-size: 2rem;*/
+/*  }*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*  .container {*/
+/*    margin-top: 2rem;*/
+/*  }*/
+
+/*  .movie {*/
+/*    width: 100%;*/
+/*    margin: 1rem;*/
+/*  }*/
+/*}*/
